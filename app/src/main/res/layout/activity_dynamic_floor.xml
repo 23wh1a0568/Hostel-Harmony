@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCCFE2">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Floor Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+    <GridLayout
+        android:id="@+id/roomGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="32dp"
+        android:columnCount="2"
+        android:gravity="center"
+        android:padding="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+    <!-- Room status legend at bottom center -->
+    <LinearLayout
+        android:id="@+id/legendLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp">
+
+        <!-- Available -->
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#FFF5CC"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Available "
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="1dp" />
+
+        <!-- Booked -->
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#D3D3D3"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Booked "
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</RelativeLayout>
