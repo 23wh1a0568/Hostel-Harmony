@@ -20,7 +20,3 @@ Hostel Harmony is a web-based application designed to streamline hostel manageme
 - Backend: Spring Boot  
 - Database: MySQL  
 - Tools: REST APIs, Git, GitHub  
-
----
-git clone https://github.com/23wh1a0568/Hostel-Harmony.git
-cd Hostel-Harmony
