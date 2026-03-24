@@ -1,9 +1,5 @@
 #  Hostel Harmony
 
-**Project Repository:**  
-https://github.com/23wh1a0568/Hostel-Harmony
-
----
 
 ##  Overview
 Hostel Harmony is a web-based application designed to streamline hostel management by providing an efficient platform for handling student grievances and complaints. It improves communication between students and hostel authorities, ensuring transparency and faster issue resolution.
